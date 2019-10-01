@@ -6,6 +6,7 @@ import AboutUs from '@/components/About Us/AboutUs.vue';
 import MyWorks from '@/components/My Works/MyWorks.vue';
 import Contact from '@/components/Contact/Contact.vue';
 import LogoGrid from '@/components/Logo Grid/LogoGrid.vue';
+import Pricing from "@/components/Pricing/Pricing.vue";
 
 interface NavItems {
   id: number;
@@ -21,12 +22,15 @@ interface NavItems {
     Introduction,
     AboutUs,
     MyWorks,
+    Pricing,
     Contact,
     LogoGrid,
   },
 })
 export default class App extends Vue {
   logo: any = logo;
+
+  drawer: boolean = false;
 
   type: string = 'selector';
 
@@ -84,6 +88,7 @@ export default class App extends Vue {
 
   scroll(ref: string) {
     this.selector = ref;
+    this.drawer = false;
     // @ts-ignore
     this.$vuetify.goTo(this.target, this.options).catch();
   }

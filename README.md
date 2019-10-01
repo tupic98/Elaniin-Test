@@ -6,6 +6,23 @@ npm install
 ```
 
 ### Compiles and hot-reloads for development
+
+```
+npm run serve
+```
+
+##### If that doesn't work, try installing vue-cli-service dependency.
+Run
+```
+npm install @vue/cli
+```
+And
+```
+npm install @vue/cli-service
+```
+
+Then re-run
+
 ```
 npm run serve
 ```
@@ -25,5 +42,3 @@ npm run test
 npm run lint
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

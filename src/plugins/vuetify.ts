@@ -9,6 +9,7 @@ export default new Vuetify({
     themes: {
       light: {
         transparent: 'rgba(255,255,255,0)',
+        black: 'rgba(0,0,0,0.91)',
         primary: '#6a9fee',
         secondary: '#424242',
         accent: '#82B1FF',

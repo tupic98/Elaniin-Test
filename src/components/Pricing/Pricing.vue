@@ -53,7 +53,7 @@
 </template>
 
 <script lang="ts">
-  import { Component, Vue } from 'vue-property-decorator';
+import { Component, Vue } from 'vue-property-decorator';
 
   interface PriceCard {
     id: number;
@@ -76,8 +76,7 @@
   }
 
   @Component
-  export default class Pricing extends Vue {
-
+export default class Pricing extends Vue {
     priceCardItems: PriceCard[] = [
       {
         id: 1,
@@ -131,7 +130,7 @@
       }
       return 'secondary lighten-1';
     }
-  }
+}
 </script>
 
 <style lang="scss" scoped>

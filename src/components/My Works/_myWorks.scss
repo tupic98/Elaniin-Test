@@ -1,0 +1,272 @@
+.my-works {
+  min-height: calc(50vh - 0px);
+  height: calc(100vh);
+  max-height: calc(100vh);
+  display: grid;
+  grid-template-columns: 0.01fr 1.5fr 1fr 0.15fr;
+  grid-template-rows: 0.3fr 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+
+  .top__left {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .top__center-left {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+
+  .top__center-right {
+    grid-area: 1 / 3 / 2 / 4;
+  }
+
+  .top__right {
+    grid-area: 1 / 4 / 2 / 5;
+  }
+
+  .bottom {
+    grid-area: 2 / 1 / 3 / 5;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+
+    .img1 {
+      grid-area: 1 / 1 / 2 / 2;
+      position: relative;
+    }
+
+    .image1 {
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+
+    .info1 {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 20%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .img1:hover .image1 {
+      opacity: 0.3;
+    }
+
+
+    .img1:hover .info1 {
+      opacity: 1;
+    }
+
+    .img2 {
+      grid-area: 2 / 1 / 3 / 2;
+      position: relative;
+    }
+
+
+    .image2 {
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+
+    .info2 {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 20%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .img2:hover .image2 {
+      opacity: 0.3;
+    }
+
+
+    .img2:hover .info2 {
+      opacity: 1;
+    }
+
+    .img3 {
+      grid-area: 1 / 2 / 3 / 3;
+      position: relative;
+    }
+
+
+    .image3 {
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+
+    .info3 {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 20%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .img3:hover .image3 {
+      opacity: 0.3;
+    }
+
+
+    .img3:hover .info3 {
+      opacity: 1;
+    }
+
+    .img4 {
+      grid-area: 1 / 3 / 2 / 5;
+      position: relative;
+    }
+
+
+    .image4 {
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+
+    .info4 {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 10%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .img4:hover .image4 {
+      opacity: 0.3;
+    }
+
+
+    .img4:hover .info4 {
+      opacity: 1;
+    }
+
+    .img5 {
+      grid-area: 2 / 3 / 3 / 4;
+      position: relative;
+    }
+
+
+    .image5 {
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+
+    .info5 {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 20%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .img5:hover .image5 {
+      opacity: 0.3;
+    }
+
+
+    .img5:hover .info5 {
+      opacity: 1;
+    }
+
+    .img6 {
+      grid-area: 2 / 4 / 3 / 5;
+      position: relative;
+    }
+
+
+    .image6 {
+      opacity: 1;
+      display: block;
+      width: 100%;
+      height: auto;
+      transition: .5s ease;
+      backface-visibility: hidden;
+    }
+
+    .info6 {
+      transition: .5s ease;
+      opacity: 0;
+      position: absolute;
+      top: 50%;
+      left: 20%;
+      transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    .img6:hover .image6 {
+      opacity: 0.3;
+    }
+
+
+    .img6:hover .info6 {
+      opacity: 1;
+    }
+
+    .text {
+      color: white;
+      font-size: 16px;
+      padding: 16px 32px;
+    }
+  }
+}
+
+.info_title {
+  font-size: 11px;
+}
+
+.info_desc {
+  font-size: 13px;
+}
+
+.line {
+  position: absolute;
+  width: 100px;
+  left: 230px;
+}
+
+.works-text {
+  font-size: 52px;
+}
+
+.works-paragraph {
+  font-size: 12px
+}
